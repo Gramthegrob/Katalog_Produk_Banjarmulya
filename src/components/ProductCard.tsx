@@ -16,10 +16,10 @@ export default function ProductCard({ product }: ProductCardProps) {
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-3 left-3 flex gap-2">
-          {product.inSeason && (
-            <span className="bg-green-600 text-white text-xs px-2 py-1 rounded-full font-medium">
-              In Season
-            </span>
+          {product.ready && (
+              <span className="bg-green-600 text-white text-xs px-2 py-1 rounded-full font-medium">
+    Ready
+  </span>
           )}
           {product.organic && (
             <span className="bg-emerald-600 text-white text-xs px-2 py-1 rounded-full font-medium flex items-center gap-1">
@@ -40,17 +40,17 @@ export default function ProductCard({ product }: ProductCardProps) {
         
         <div className="flex items-center justify-between">
           <div className="flex flex-col">
-            <span className="text-2xl font-bold text-green-600">
-              ${product.price.toFixed(2)}
-            </span>
+<span className="text-2xl font-bold text-green-600">
+  {product.price.toLocaleString('id-ID', {style: 'currency', currency: 'IDR'})}
+</span>
             <span className="text-sm text-gray-500">per {product.unit}</span>
           </div>
         </div>
-        
+
         <div className="flex items-center mt-3 pt-3 border-t border-gray-100">
           <div className="flex items-center">
             {[...Array(5)].map((_, i) => (
-              <Star
+                <Star
                 key={i}
                 className="w-4 h-4 text-yellow-400 fill-current"
               />
