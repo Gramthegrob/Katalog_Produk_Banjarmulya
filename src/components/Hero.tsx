@@ -40,30 +40,6 @@ export default function Hero() {
                 Di bawah bayangan cerobong tua pabrik gula Sidomulyo, kehidupan terus mengalir. Warga menata harapan lewat cangkul dan kandang, menjaga warisan, dan membangun hari esok dari tanah yang sama.
               </p>
 
-              {/* Enhanced feature badges with better spacing and hover effects */}
-              <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-                <div className="transform hover:scale-105 transition-transform">
-                  <div className="flex items-center gap-2 bg-green-900/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg hover:bg-green-800/90 transition-all">
-                    <Leaf className="w-5 h-5 text-white" />
-                    <span className="text-white font-semibold">100% Organik</span>
-                  </div>
-                </div>
-
-                <div className="transform hover:scale-105 transition-transform">
-                  <div className="flex items-center gap-2 bg-green-900/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg hover:bg-green-800/90 transition-all">
-                    <Sun className="w-5 h-5 text-white" />
-                    <span className="text-white font-semibold">Segar Setiap Hari</span>
-                  </div>
-                </div>
-
-                <div className="transform hover:scale-105 transition-transform">
-                  <div className="flex items-center gap-2 bg-green-900/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg hover:bg-green-800/90 transition-all">
-                    <Heart className="w-5 h-5 text-white" />
-                    <span className="text-white font-semibold">Produksi Lokal</span>
-                  </div>
-                </div>
-              </div>
-
               {/* Refined CTA button with smooth transition */}
               <div className="mt-12">
                 <Link
