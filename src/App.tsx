@@ -1,14 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Overview from './components/Overview';
 import ProductCatalog from './components/ProductCatalog';
 import Footer from './components/Footer';
+import VillageStories from './Pages/village-stories.tsx';
 
-function App() {
+function HomePage() {
     return (
-        <div className="min-h-screen">
-            <Header />
+        <>
             <section id="home">
                 <Hero />
             </section>
@@ -18,8 +19,22 @@ function App() {
             <section id="products">
                 <ProductCatalog />
             </section>
-            <Footer />
-        </div>
+        </>
+    );
+}
+
+function App() {
+    return (
+        <Router>
+            <div className="min-h-screen">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/village-stories" element={<VillageStories />} />
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
     );
 }
 

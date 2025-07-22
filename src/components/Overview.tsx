@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Overview() {
     return (
         <section className="relative py-32 overflow-hidden">
@@ -23,41 +21,38 @@ export default function Overview() {
                 <h2 className="text-5xl font-bold text-center text-white mb-20 drop-shadow-lg">
                     About Banjarmulya
                 </h2>
-                <div className="grid md:grid-cols-3 gap-12">
+                <div className="grid md:grid-cols-2 gap-12">
                     <div className="group">
-                        <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-white/20 transform transition-all duration-300 hover:-translate-y-2 hover:bg-white/20">
-                            <div className="bg-white/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
-                                <span className="text-5xl">🌱</span>
+                        <a href="/village-stories" className="block">
+                            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-white/20 transform transition-all duration-300 hover:-translate-y-2 hover:bg-white/20">
+                                <div className="bg-white/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
+                                    <span className="text-5xl">📋</span>
+                                </div>
+                                <h3 className="text-2xl font-semibold mb-4 text-white text-center">Overview</h3>
+                                <p className="text-white/90 text-center leading-relaxed">
+                                    Learn more about Banjarmulya village, our community, and the stories that make our village unique. Discover our rich heritage and vibrant culture.
+                                </p>
                             </div>
-                            <h3 className="text-2xl font-semibold mb-4 text-white text-center">Our Mission</h3>
-                            <p className="text-white/90 text-center leading-relaxed">
-                                Supporting local farmers and providing fresh, quality products to our community.
-                            </p>
-                        </div>
+                        </a>
                     </div>
 
                     <div className="group">
-                        <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-white/20 transform transition-all duration-300 hover:-translate-y-2 hover:bg-white/20">
-                            <div className="bg-white/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
-                                <span className="text-5xl">🤝</span>
+                        <a href="#products" className="block" onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('products')?.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }}>
+                            <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-white/20 transform transition-all duration-300 hover:-translate-y-2 hover:bg-white/20">
+                                <div className="bg-white/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
+                                    <span className="text-5xl">🌾</span>
+                                </div>
+                                <h3 className="text-2xl font-semibold mb-4 text-white text-center">Our Products</h3>
+                                <p className="text-white/90 text-center leading-relaxed">
+                                    Discover our wide range of agricultural products. From fresh vegetables to premium rice varieties, explore our complete product catalog.
+                                </p>
                             </div>
-                            <h3 className="text-2xl font-semibold mb-4 text-white text-center">Community</h3>
-                            <p className="text-white/90 text-center leading-relaxed">
-                                Building strong relationships between farmers and consumers.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="group">
-                        <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-white/20 transform transition-all duration-300 hover:-translate-y-2 hover:bg-white/20">
-                            <div className="bg-white/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
-                                <span className="text-5xl">🌿</span>
-                            </div>
-                            <h3 className="text-2xl font-semibold mb-4 text-white text-center">Sustainability</h3>
-                            <p className="text-white/90 text-center leading-relaxed">
-                                Promoting sustainable farming practices and environmental responsibility.
-                            </p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
