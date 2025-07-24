@@ -9,7 +9,7 @@ export default function VillageStories() {
             {/* Hero Section */}
             <div className="relative bg-green-600 text-white py-24">
                 <div className="container mx-auto px-4">
-                    <h1 className="text-5xl font-bold text-center mb-6">About Banjarmulya Village</h1>
+                    <h1 className="text-5xl font-bold text-center mb-6">Tentang Dusun Sidomulya</h1>
                     <p className="text-xl text-center max-w-3xl mx-auto">
                         Discover the story of our vibrant agricultural community
                     </p>
@@ -21,7 +21,7 @@ export default function VillageStories() {
                 <article className="bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div className="h-96 w-full relative">
                         <img
-                            src="/images/village-hero.jpg"
+                            src="src/images/sumberharjo.jpg"
                             alt="Banjarmulya Village Panorama"
                             className="w-full h-full object-cover"
                         />
@@ -73,7 +73,7 @@ export default function VillageStories() {
 
                             <div className="my-12">
                                 <img
-                                    src="/images/community.jpg"
+                                    src="src/images/gunung_gajah.jpg"
                                     alt="Community Gathering"
                                     className="w-full rounded-lg shadow-md"
                                 />

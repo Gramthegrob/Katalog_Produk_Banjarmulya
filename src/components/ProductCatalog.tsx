@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProductGrid from './ProductGrid';
-import { products } from '../data/products';
+import { products } from '../data/products.ts';
 import { Product } from '../types/Product';
 
 export default function ProductCatalog() {

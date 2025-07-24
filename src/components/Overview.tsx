@@ -19,7 +19,7 @@ export default function Overview() {
             {/* Content */}
             <div className="relative container mx-auto px-4">
                 <h2 className="text-5xl font-bold text-center text-white mb-20 drop-shadow-lg">
-                    About Banjarmulya
+                    Tentang Sidomulya
                 </h2>
                 <div className="grid md:grid-cols-2 gap-12">
                     <div className="group">
@@ -28,9 +28,9 @@ export default function Overview() {
                                 <div className="bg-white/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
                                     <span className="text-5xl">📋</span>
                                 </div>
-                                <h3 className="text-2xl font-semibold mb-4 text-white text-center">Overview</h3>
+                                <h3 className="text-2xl font-semibold mb-4 text-white text-center">Pelajari</h3>
                                 <p className="text-white/90 text-center leading-relaxed">
-                                    Learn more about Banjarmulya village, our community, and the stories that make our village unique. Discover our rich heritage and vibrant culture.
+                                    Pelajari lebih lanjut tentang Dusun Sidomulya, komunitas kami dan cerita yang membuat kami unik. Pelajari kekayaan warisan dan budaya kami.
                                 </p>
                             </div>
                         </a>
@@ -47,9 +47,9 @@ export default function Overview() {
                                 <div className="bg-white/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
                                     <span className="text-5xl">🌾</span>
                                 </div>
-                                <h3 className="text-2xl font-semibold mb-4 text-white text-center">Our Products</h3>
+                                <h3 className="text-2xl font-semibold mb-4 text-white text-center">Produk Kami</h3>
                                 <p className="text-white/90 text-center leading-relaxed">
-                                    Discover our wide range of agricultural products. From fresh vegetables to premium rice varieties, explore our complete product catalog.
+                                    Pelajari Katalog Produk Kami.
                                 </p>
                             </div>
                         </a>
