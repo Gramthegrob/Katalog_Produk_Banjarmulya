@@ -5,9 +5,10 @@ import Hero from './components/Hero';
 import Overview from './components/Overview';
 import ProductCatalog from './components/ProductCatalog';
 import Footer from './components/Footer';
+// Fix these import paths - remove file extensions and use correct case
 import VillageStories from './Pages/village-stories';
-import SejarahDusunSidomulya from './pages/SejarahDusunSidomulya';
-import EtnografiDusunSidomulya from './pages/EtnografiDusunSidomulya';
+import SejarahDusunSidomulya from './Pages/SejarahDusunSidomulya';
+import EtnografiDusunSidomulya from './Pages/EtnografiDusunSidomulya';
 
 function HomePage() {
     return (
