@@ -5,7 +5,9 @@ import Hero from './components/Hero';
 import Overview from './components/Overview';
 import ProductCatalog from './components/ProductCatalog';
 import Footer from './components/Footer';
-import VillageStories from './Pages/village-stories.tsx';
+import VillageStories from './Pages/village-stories';
+import SejarahDusunSidomulya from './pages/SejarahDusunSidomulya';
+import EtnografiDusunSidomulya from './pages/EtnografiDusunSidomulya';
 
 function HomePage() {
     return (
@@ -31,6 +33,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/village-stories" element={<VillageStories />} />
+                    <Route path="/village-stories/sejarah-dusun-sidomulya" element={<SejarahDusunSidomulya />} />
+                    <Route path="/village-stories/etnografi-dusun-sidomulya" element={<EtnografiDusunSidomulya />} />
                 </Routes>
                 <Footer />
             </div>

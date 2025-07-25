@@ -11,7 +11,7 @@ export default function ProductCatalog() {
         { id: 'ECO ENZYME', name: 'Eco Enzyme' },
         { id: 'SUSU KAMBING', name: 'Susu Kambing' },
         { id: 'SABUN', name: 'Sabun' },
-        { id: 'ECOBRICK', name: 'Ecobrick' }
+        { id: 'Batako', name: 'Batako' }
     ];
 
     const filteredProducts = selectedCategory === 'all'
