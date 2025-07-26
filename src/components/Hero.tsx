@@ -62,7 +62,7 @@ export default function Hero() {
             }`}>
               {/* Background Image */}
               <img
-                  src="/images/sumberharjo.jpg"
+                  src="/src/images/sumberharjo.jpg"
                   alt="Sumberharjo Village"
                   className="w-full h-96 md:h-[500px] lg:h-[600px] object-cover transition-transform duration-700 hover:scale-105"
               />

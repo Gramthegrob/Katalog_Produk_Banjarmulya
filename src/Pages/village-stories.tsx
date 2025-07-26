@@ -30,7 +30,7 @@ const stories: Story[] = [
         excerpt: "Kajian mendalam tentang budaya, adat istiadat, dan kehidupan sosial masyarakat Sidomulya. Eksplorasi tradisi yang masih lestari dan adaptasi terhadap perubahan zaman.",
         date: "22 Februari 2024",
         author: "Dr. Siti Rahayu",
-        image: "/src/images/ethnography.jpg",
+        image: "/src/images/WhatsApp Image 2025-07-23 at 13.11.28_8d47d2f8.jpg",
         category: "Etnografi",
         slug: "etnografi-dusun-sidomulya"
     }

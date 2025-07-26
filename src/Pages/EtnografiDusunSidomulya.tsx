@@ -70,7 +70,7 @@ export default function EtnografiDusunSidomulya() {
                 {/* Hero Image */}
                 <div className="absolute inset-0">
                     <img
-                        src="/images/ethnography.jpg"
+                        src="/src/images/ethnography.jpg"
                         alt="Kehidupan Masyarakat Sidomulya"
                         className="w-full h-full object-cover"
                     />
@@ -336,7 +336,7 @@ export default function EtnografiDusunSidomulya() {
                                 <div className="relative">
                                     <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                         <img
-                                            src="/images/economic-system.jpg"
+                                            src="/src/images/economic-system.jpg"
                                             alt="Sistem Ekonomi Lokal"
                                             className="w-full h-96 object-cover"
                                         />
