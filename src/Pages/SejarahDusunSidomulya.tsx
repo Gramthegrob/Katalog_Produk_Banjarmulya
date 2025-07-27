@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowLeft, Calendar, User, Clock, Share2, BookOpen, MapPin, Factory, Users, Trophy, Image as ImageIcon, Quote, ChevronDown } from 'lucide-react';
+import { ArrowLeft, Calendar, User, Clock, Share2, BookOpen, MapPin, Factory, Users, Trophy, Image as ImageIcon, Quote, ChevronDown, Lightbulb } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function SejarahDusunSidomulya() {
@@ -21,6 +21,7 @@ export default function SejarahDusunSidomulya() {
         { id: 'era-kolonial', title: 'Era Kolonial', icon: Factory },
         { id: 'era-kemerdekaan', title: 'Era Kemerdekaan', icon: Trophy },
         { id: 'era-transisi', title: 'Era Transisi', icon: Users },
+        { id: 'inovasi', title: 'Inovasi & Teknologi', icon: Lightbulb },
         { id: 'warisan', title: 'Warisan & Masa Depan', icon: MapPin }
     ];
 
@@ -120,7 +121,7 @@ export default function SejarahDusunSidomulya() {
                             </div>
                             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                                 <Clock className="w-5 h-5" />
-                                <span className="font-medium">15 menit baca</span>
+                                <span className="font-medium">20 menit baca</span>
                             </div>
                         </div>
 
@@ -420,6 +421,137 @@ export default function SejarahDusunSidomulya() {
                                     yang luar biasa. Mereka berhasil membangun ekonomi alternatif berbasis pertanian dan usaha kecil sambil
                                     tetap mempertahankan nilai-nilai komunal yang telah mengakar sejak masa lalu.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Inovasi & Teknologi Section */}
+                <section id="inovasi" className="py-20 bg-gradient-to-br from-cyan-50 to-blue-50">
+                    <div className="container mx-auto px-4">
+                        <div className="max-w-6xl mx-auto">
+                            <div className="text-center mb-16">
+                                <div className="flex items-center justify-center gap-4 mb-8">
+                                    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-3 rounded-2xl">
+                                        <Lightbulb className="w-8 h-8 text-white" />
+                                    </div>
+                                    <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-800 to-blue-700 bg-clip-text text-transparent">
+                                        Inovasi & Teknologi Modern
+                                    </h2>
+                                </div>
+                                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                                    Memasuki era digital, Dusun Sidomulya kembali bangkit dengan berbagai inovasi
+                                    teknologi yang mengubah wajah ekonomi dan kehidupan masyarakat.
+                                </p>
+                            </div>
+
+                            {/* Innovation Timeline */}
+                            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+                                <div className="bg-white rounded-3xl shadow-xl p-8 border border-cyan-100 transform hover:scale-105 transition-all duration-300">
+                                    <div className="relative mb-6">
+                                        <img
+                                            src="/images/images/automation.jpg"
+                                            alt="Teknologi Otomasi Pertanian"
+                                            className="w-full h-48 object-cover rounded-2xl"
+                                        />
+                                        <div className="absolute top-4 right-4 bg-cyan-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            2018
+                                        </div>
+                                    </div>
+                                    <h4 className="text-xl font-bold text-cyan-800 mb-4">🚜 Otomasi Pertanian</h4>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        Implementasi sistem irigasi otomatis dan sensor kelembaban tanah yang
+                                        meningkatkan efisiensi produksi pertanian hingga 40%.
+                                    </p>
+                                </div>
+
+                                <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100 transform hover:scale-105 transition-all duration-300">
+                                    <div className="relative mb-6">
+                                        <img
+                                            src="/images/images/marketplace.jpg"
+                                            alt="Platform Digital Marketplace"
+                                            className="w-full h-48 object-cover rounded-2xl"
+                                        />
+                                        <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            2020
+                                        </div>
+                                    </div>
+                                    <h4 className="text-xl font-bold text-blue-800 mb-4">💻 Marketplace Digital</h4>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        Peluncuran platform digital untuk pemasaran produk lokal yang menghubungkan
+                                        petani langsung dengan konsumen di seluruh Indonesia.
+                                    </p>
+                                </div>
+
+                                <div className="bg-white rounded-3xl shadow-xl p-8 border border-indigo-100 transform hover:scale-105 transition-all duration-300">
+                                    <div className="relative mb-6">
+                                        <img
+                                            src="/images/images/renewable-energy.jpg"
+                                            alt="Energi Terbarukan"
+                                            className="w-full h-48 object-cover rounded-2xl"
+                                        />
+                                        <div className="absolute top-4 right-4 bg-indigo-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            2022
+                                        </div>
+                                    </div>
+                                    <h4 className="text-xl font-bold text-indigo-800 mb-4">☀️ Energi Terbarukan</h4>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        Instalasi panel surya komunal dan biogas dari limbah pertanian yang
+                                        menjadikan dusun mandiri energi hingga 80%.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Innovation Gallery */}
+                            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <div className="group cursor-pointer">
+                                    <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                                        <img
+                                            src="/images/images/smart-farming.jpg"
+                                            alt="Smart Farming Technology"
+                                            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                                        />
+                                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                            <span className="text-white font-semibold">Smart Farming</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="group cursor-pointer">
+                                    <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                                        <img
+                                            src="/images/images/iot-sensors.jpg"
+                                            alt="IoT Sensors"
+                                            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                                        />
+                                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                            <span className="text-white font-semibold">IoT Monitoring</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="group cursor-pointer">
+                                    <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                                        <img
+                                            src="/images/images/hydroponic.jpg"
+                                            alt="Hydroponic System"
+                                            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                                        />
+                                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                            <span className="text-white font-semibold">Hidroponik Modern</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="group cursor-pointer">
+                                    <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                                        <img
+                                            src="/images/images/drone-agriculture.jpg"
+                                            alt="Drone Technology"
+                                            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                                        />
+                                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                            <span className="text-white font-semibold">Teknologi Drone</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
