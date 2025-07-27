@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Overview from './components/Overview';
 import ProductCatalog from './components/ProductCatalog';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 // Fix these import paths - remove file extensions and use correct case
 import VillageStories from './Pages/village-stories';
 import SejarahDusunSidomulya from './Pages/SejarahDusunSidomulya';
@@ -38,6 +39,13 @@ function App() {
                     <Route path="/village-stories/etnografi-dusun-sidomulya" element={<EtnografiDusunSidomulya />} />
                 </Routes>
                 <Footer />
+
+                {/* Floating WhatsApp Button */}
+                <WhatsAppButton
+                    phoneNumber="+62812345678900" // Replace with your actual WhatsApp number
+                    variant="floating"
+                    size="md"
+                />
             </div>
         </Router>
     );

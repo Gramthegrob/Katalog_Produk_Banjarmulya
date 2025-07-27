@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
-import { Menu, X, Leaf, Sparkles } from 'lucide-react';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
+import { Leaf, Sparkles, Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,12 +19,84 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Check if we're on the home page
+  const isHomePage = location.pathname === '/';
+
   const navItems = [
-    { name: 'Home', to: 'home' },
-    { name: 'Overview', to: 'about' },
-    { name: 'Products', to: 'products' },
-    { name: 'Contact', to: 'contact' },
+    { name: 'Home', to: 'home', type: 'section' },
+    { name: 'Overview', to: 'about', type: 'section' },
+    { name: 'Products', to: 'products', type: 'section' },
+    { name: 'Stories', to: '/village-stories', type: 'route' },
+    { name: 'Contact', to: 'contact', type: 'section' },
   ];
+
+  const handleNavigation = (item: any) => {
+    if (item.type === 'route') {
+      navigate(item.to);
+    } else if (item.type === 'section') {
+      if (!isHomePage) {
+        // If not on home page, go to home page first, then scroll to section
+        navigate('/');
+        setTimeout(() => {
+          const element = document.getElementById(item.to);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      }
+      // If on home page, the ScrollLink will handle it
+    }
+    setIsMobileMenuOpen(false);
+  };
+
+  const renderNavItem = (item: any, index: number) => {
+    const baseClasses = `cursor-pointer font-medium transition-all duration-300 relative group px-4 py-2 rounded-full hover:bg-green-50 ${
+        isScrolled ? 'text-gray-700 hover:text-green-600' : 'text-green-800 hover:text-green-600'
+    }`;
+
+    const isActive = item.type === 'route'
+        ? location.pathname === item.to
+        : activeSection === item.to && isHomePage;
+
+    const activeClasses = isActive ? 'text-green-600' : '';
+
+    if (item.type === 'section' && isHomePage) {
+      return (
+          <ScrollLink
+              key={item.to}
+              to={item.to}
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onSetActive={() => setActiveSection(item.to)}
+              className={`${baseClasses} ${activeClasses}`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            {item.name}
+            <span className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-green-500 to-emerald-500 transition-all duration-300 ${
+                isActive ? 'w-3/4' : 'w-0 group-hover:w-3/4'
+            }`}></span>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-green-400/20 to-emerald-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+          </ScrollLink>
+      );
+    } else {
+      return (
+          <button
+              key={item.to}
+              onClick={() => handleNavigation(item)}
+              className={`${baseClasses} ${activeClasses}`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            {item.name}
+            <span className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-green-500 to-emerald-500 transition-all duration-300 ${
+                isActive ? 'w-3/4' : 'w-0 group-hover:w-3/4'
+            }`}></span>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-green-400/20 to-emerald-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+          </button>
+      );
+    }
+  };
 
   return (
       <header
@@ -34,7 +109,7 @@ export default function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Enhanced Logo */}
-            <div className="flex items-center gap-3 group cursor-pointer">
+            <RouterLink to="/" className="flex items-center gap-3 group cursor-pointer">
               <div className="relative">
                 <Leaf className={`w-8 h-8 transition-all duration-300 group-hover:animate-wave ${
                     isScrolled ? 'text-green-600' : 'text-green-800'
@@ -44,73 +119,40 @@ export default function Header() {
               <span className={`font-bold text-2xl transition-all duration-300 group-hover:scale-105 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent`}>
               PawonSidomulyo
             </span>
-            </div>
+            </RouterLink>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
-              {navItems.map((item, index) => (
-                  <Link
-                      key={item.to}
-                      to={item.to}
-                      spy={true}
-                      smooth={true}
-                      offset={-80}
-                      duration={500}
-                      onSetActive={() => setActiveSection(item.to)}
-                      className={`cursor-pointer font-medium transition-all duration-300 relative group px-4 py-2 rounded-full hover:bg-green-50 ${
-                          isScrolled ? 'text-gray-700 hover:text-green-600' : 'text-green-800 hover:text-green-600'
-                      } ${activeSection === item.to ? 'text-green-600' : ''}`}
-                      style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {item.name}
-                    {/* Fixed centered underline animation */}
-                    <span className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 h-0.5 bg-gradient-to-r from-green-500 to-emerald-500 transition-all duration-300 ${
-                        activeSection === item.to ? 'w-3/4' : 'w-0 group-hover:w-3/4'
-                    }`}></span>
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-green-400/20 to-emerald-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
-                  </Link>
-              ))}
+              {navItems.map((item, index) => renderNavItem(item, index))}
             </nav>
 
             {/* Mobile Menu Button */}
             <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`md:hidden p-2 rounded-full transition-all duration-300 hover:bg-green-50 ${
-                    isScrolled ? 'text-gray-700' : 'text-green-800'
+                className={`md:hidden p-2 rounded-lg transition-all duration-300 ${
+                    isScrolled ? 'text-gray-700 hover:bg-green-50' : 'text-green-800 hover:bg-white/20'
                 }`}
             >
-              {isMobileMenuOpen ? (
-                  <X className="w-6 h-6 transition-transform duration-300 rotate-180" />
-              ) : (
-                  <Menu className="w-6 h-6 transition-transform duration-300" />
-              )}
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
 
-          {/* Mobile Navigation */}
-          <div className={`md:hidden transition-all duration-500 overflow-hidden ${
-              isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-          }`}>
-            <nav className="py-4 space-y-2">
-              {navItems.map((item, index) => (
-                  <Link
-                      key={item.to}
-                      to={item.to}
-                      spy={true}
-                      smooth={true}
-                      offset={-80}
-                      duration={500}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className={`block px-4 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-green-50 hover:text-green-600 hover:translate-x-2 animate-slide-in-left ${
-                          isScrolled ? 'text-gray-700' : 'text-green-800'
-                      }`}
-                      style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {item.name}
-                  </Link>
-              ))}
-            </nav>
-          </div>
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+              <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg border-b border-green-100 shadow-xl">
+                <nav className="container mx-auto px-4 py-6 space-y-4">
+                  {navItems.map((item, index) => (
+                      <button
+                          key={item.to}
+                          onClick={() => handleNavigation(item)}
+                          className="block w-full text-left px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-all duration-300"
+                      >
+                        {item.name}
+                      </button>
+                  ))}
+                </nav>
+              </div>
+          )}
         </div>
       </header>
   );
