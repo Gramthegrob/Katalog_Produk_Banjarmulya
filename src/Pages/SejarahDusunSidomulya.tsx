@@ -67,7 +67,7 @@ export default function SejarahDusunSidomulya() {
                 {/* Hero Image */}
                 <div className="absolute inset-0">
                     <img
-                        src="/src/images/sumberharjo.jpg"
+                        src="/images/images/sumberharjo.jpg"
                         alt="Pabrik Gula Sumberharjo"
                         className="w-full h-full object-cover"
                     />
@@ -238,7 +238,7 @@ export default function SejarahDusunSidomulya() {
                                     {/* Historical Image */}
                                     <div className="relative rounded-3xl overflow-hidden shadow-2xl mb-6">
                                         <img
-                                            src="/src/images/Suikerfabriek_Soember-Hardjo_bij_Pemalang,_KITLV_18230.jpg"
+                                            src="/images/images/Suikerfabriek_Soember-Hardjo_bij_Pemalang,_KITLV_18230.jpg"
                                             alt="Pabrik Gula Sumberharjo pada era kolonial"
                                             className="w-full h-96 object-cover"
                                         />
@@ -299,7 +299,7 @@ export default function SejarahDusunSidomulya() {
                                 <div className="relative order-2 lg:order-1">
                                     <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                         <img
-                                            src="/src/images/day6-75.jpg"
+                                            src="/images/images/day6-75.jpg"
                                             alt="Era Kemerdekaan"
                                             className="w-full h-96 object-cover"
                                         />

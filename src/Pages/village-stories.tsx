@@ -20,7 +20,7 @@ const stories: Story[] = [
         excerpt: "Perjalanan panjang Dusun Sidomulya dari masa kolonial hingga era modern, termasuk peran penting pabrik gula Sumberharjo dalam membentuk identitas dan karakter masyarakat setempat.",
         date: "15 Maret 2024",
         author: "Pak Suroto",
-        image: "/src/images/sumberharjo.jpg",
+        image: "/images/images/sumberharjo.jpg",
         category: "Sejarah",
         slug: "sejarah-dusun-sidomulya"
     },
@@ -30,7 +30,7 @@ const stories: Story[] = [
         excerpt: "Kajian mendalam tentang budaya, adat istiadat, dan kehidupan sosial masyarakat Sidomulya. Eksplorasi tradisi yang masih lestari dan adaptasi terhadap perubahan zaman.",
         date: "22 Februari 2024",
         author: "Dr. Siti Rahayu",
-        image: "/src/images/WhatsApp Image 2025-07-23 at 13.11.28_8d47d2f8.jpg",
+        image: "/images/images/WhatsApp Image 2025-07-23 at 13.11.28_8d47d2f8.jpg",
         category: "Etnografi",
         slug: "etnografi-dusun-sidomulya"
     }
