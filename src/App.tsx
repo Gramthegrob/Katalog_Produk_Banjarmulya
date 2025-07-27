@@ -42,7 +42,7 @@ function App() {
 
                 {/* Floating WhatsApp Button */}
                 <WhatsAppButton
-                    phoneNumber="+62812345678900" // Replace with your actual WhatsApp number
+                    phoneNumber="+6287855382757" // Replace with your actual WhatsApp number
                     variant="floating"
                     size="md"
                 />
