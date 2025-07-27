@@ -112,11 +112,11 @@ export default function SejarahDusunSidomulya() {
                         }`}>
                             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                                 <Calendar className="w-5 h-5" />
-                                <span className="font-medium">15 Maret 2024</span>
+                                <span className="font-medium">30 Juli 2025</span>
                             </div>
                             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                                 <User className="w-5 h-5" />
-                                <span className="font-medium">Pak Suroto</span>
+                                <span className="font-medium">Bagaskara Dipowicaksono HP</span>
                             </div>
                             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
                                 <Clock className="w-5 h-5" />
@@ -127,10 +127,6 @@ export default function SejarahDusunSidomulya() {
                         <div className={`flex items-center gap-4 transition-all duration-1000 ${
                             isVisible ? 'animate-slide-in-up stagger-4' : 'opacity-0 translate-y-10'
                         }`}>
-                            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl flex items-center gap-3 font-semibold transform hover:-translate-y-1">
-                                <Share2 className="w-5 h-5" />
-                                <span>Bagikan Artikel</span>
-                            </button>
                             <button
                                 onClick={() => document.getElementById('pendahuluan')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl flex items-center gap-3 font-semibold backdrop-blur-sm border border-white/30"
@@ -180,7 +176,7 @@ export default function SejarahDusunSidomulya() {
                                                 "Sejarah adalah guru terbaik, dan Dusun Sidomulya adalah bukti hidup bagaimana sebuah komunitas
                                                 dapat bertahan dan berkembang melalui berbagai perubahan zaman."
                                             </blockquote>
-                                            <cite className="text-green-600 font-semibold mt-2 block">- Pak Suroto, Sesepuh Desa</cite>
+                                            <cite className="text-green-600 font-semibold mt-2 block">- Pak Kalis, Kadus Sidomulya</cite>
                                         </div>
                                     </div>
                                 </div>

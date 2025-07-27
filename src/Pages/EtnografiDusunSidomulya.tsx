@@ -70,7 +70,7 @@ export default function EtnografiDusunSidomulya() {
                 {/* Hero Image */}
                 <div className="absolute inset-0">
                     <img
-                        src="/images/images/ethnography.jpg"
+                        src="https://legalist.id/wp-content/uploads/2023/11/Izin-usaha-peternakan.jpg"
                         alt="Kehidupan Masyarakat Sidomulya"
                         className="w-full h-full object-cover"
                     />
@@ -130,10 +130,6 @@ export default function EtnografiDusunSidomulya() {
                         <div className={`flex items-center gap-4 transition-all duration-1000 ${
                             isVisible ? 'animate-slide-in-up stagger-4' : 'opacity-0 translate-y-10'
                         }`}>
-                            <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full transition-all duration-300 hover:shadow-2xl flex items-center gap-3 font-semibold transform hover:-translate-y-1">
-                                <Share2 className="w-5 h-5" />
-                                <span>Bagikan Artikel</span>
-                            </button>
                             <button
                                 onClick={() => document.getElementById('pendahuluan')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-full transition-all duration-300 hover:shadow-xl flex items-center gap-3 font-semibold backdrop-blur-sm border border-white/30"
@@ -336,7 +332,7 @@ export default function EtnografiDusunSidomulya() {
                                 <div className="relative">
                                     <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                         <img
-                                            src="/images/images/economic-system.jpg"
+                                            src="https://www.balipost.com/wp-content/uploads/2017/08/balipostcom_sidak-hewan-qurban-ditemukan-dua-kambing-tak-layak-potong_01-696x464.jpg"
                                             alt="Sistem Ekonomi Lokal"
                                             className="w-full h-96 object-cover"
                                         />
