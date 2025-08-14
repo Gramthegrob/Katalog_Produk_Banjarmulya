@@ -153,9 +153,9 @@ export default function EtnografiDusunSidomulya() {
                 {/* Pendahuluan Section */}
                 <section id="pendahuluan" className="py-20">
                     <div className="container mx-auto px-4">
-                        <div className="max-w-4xl mx-auto">
-                            <div className="bg-gradient-to-br from-white to-purple-50/50 rounded-3xl shadow-2xl border border-purple-100/50 overflow-hidden">
-                                <div className="p-12">
+                        <div className="max-w-6xl mx-auto">
+                            <div className="grid lg:grid-cols-2 gap-12 items-center">
+                                <div className="bg-gradient-to-br from-white to-purple-50/50 rounded-3xl shadow-2xl border border-purple-100/50 overflow-hidden p-12">
                                     <div className="flex items-center gap-4 mb-8">
                                         <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-2xl">
                                             <BookOpen className="w-8 h-8 text-white" />
@@ -183,6 +183,30 @@ export default function EtnografiDusunSidomulya() {
                                         </div>
                                     </div>
                                 </div>
+
+                                {/* Peta/Lokasi Desa */}
+                                <div className="relative">
+                                    <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                                        <img
+                                            src="/images/images/WhatsApp Image 2025-07-23 at 13.11.28_8d47d2f8.jpg"
+                                            alt="Kondisi geografis Desa Banjarmulya"
+                                            className="w-full h-96 object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                                        <div className="absolute bottom-6 left-6 right-6">
+                                            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+                                                <p className="text-gray-800 font-semibold text-lg mb-2">
+                                                    Kawasan Pertanian dan Peternakan Banjarmulya
+                                                </p>
+                                                <p className="text-gray-600 text-sm">
+                                                    Kondisi geografis yang mendukung aktivitas pertanian dan peternakan masyarakat
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="absolute -top-6 -right-6 w-24 h-24 bg-purple-200/30 rounded-full blur-2xl"></div>
+                                    <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-pink-200/30 rounded-full blur-2xl"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -203,14 +227,38 @@ export default function EtnografiDusunSidomulya() {
                                 </div>
                             </div>
 
-                            <div className="bg-white p-8 rounded-3xl shadow-xl border border-red-100 mb-8">
-                                <h4 className="font-bold text-red-800 mb-6 text-xl flex items-center gap-3">
-                                    <span>🗣️</span> Wawancara dengan Mitra
-                                </h4>
-                                <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-red-400">
-                                    <p className="text-gray-700 leading-relaxed">
-                                        Berdasarkan pernyataan mitra kita yakni pak dani (20/07/25), melalui wawancara mengatakan bahwa salah satu sumber penyakit yang ada pada hewan ternaknya berasal dari gigitan nyamuk. Permasalahan tersebut dapat menimbulkan demam ataupun penyakit kulit pada hewan ternak. Dalam proses penyembuhannya, pak dani biasanya memberikan obat yang disarankan oleh sesama peternak lainnya.
-                                    </p>
+                            <div className="grid lg:grid-cols-2 gap-8 mb-8">
+                                <div className="bg-white p-8 rounded-3xl shadow-xl border border-red-100">
+                                    <h4 className="font-bold text-red-800 mb-6 text-xl flex items-center gap-3">
+                                        <span>🗣️</span> Wawancara dengan Mitra
+                                    </h4>
+                                    <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-red-400">
+                                        <p className="text-gray-700 leading-relaxed">
+                                            Berdasarkan pernyataan mitra kita yakni pak dani (20/07/25), melalui wawancara mengatakan bahwa salah satu sumber penyakit yang ada pada hewan ternaknya berasal dari gigitan nyamuk. Permasalahan tersebut dapat menimbulkan demam ataupun penyakit kulit pada hewan ternak. Dalam proses penyembuhannya, pak dani biasanya memberikan obat yang disarankan oleh sesama peternak lainnya.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Dokumentasi Wawancara */}
+                                <div className="relative">
+                                    <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                                        <img
+                                            src="/images/images/WhatsApp Image 2025-08-13 at 22.33.41_0957f77c.jpg"
+                                            alt="Dokumentasi wawancara dengan peternak lokal"
+                                            className="w-full h-96 object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                                        <div className="absolute bottom-6 left-6 right-6">
+                                            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-white/50">
+                                                <p className="text-gray-800 font-semibold text-lg mb-2">
+                                                    Sesi Wawancara dengan Peternak
+                                                </p>
+                                                <p className="text-gray-600 text-sm">
+                                                    Tim KKN melakukan wawancara mendalam dengan peternak lokal untuk memahami permasalahan kesehatan ternak
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -262,6 +310,32 @@ export default function EtnografiDusunSidomulya() {
                                 </div>
                             </div>
 
+                            {/* Dokumentasi Program */}
+                            <div className="grid md:grid-cols-2 gap-8 mb-8">
+                                <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                                    <img
+                                        src="/images/images/WhatsApp Image 2025-07-23 at 13.11.28_8d47d2f8.jpg"
+                                        alt="Implementasi program fermentasi pakan"
+                                        className="w-full h-64 object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                                    <div className="absolute bottom-4 left-4 right-4">
+                                        <p className="text-white font-semibold">Program Fermentasi Pakan</p>
+                                    </div>
+                                </div>
+                                <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                                    <img
+                                        src="/images/images/sumberharjo.jpg"
+                                        alt="Smart light trap dan disinfektan kandang"
+                                        className="w-full h-64 object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                                    <div className="absolute bottom-4 left-4 right-4">
+                                        <p className="text-white font-semibold">Smart Light Trap & Disinfektan</p>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-3xl border border-green-200">
                                 <h4 className="font-bold text-green-800 mb-4 text-xl">🎯 Tujuan Program</h4>
                                 <p className="text-gray-700 leading-relaxed">
@@ -292,36 +366,87 @@ export default function EtnografiDusunSidomulya() {
 
                             <div className="space-y-8">
                                 {/* Aset Manusia */}
-                                <div className="bg-white p-8 rounded-3xl shadow-xl border border-blue-100">
-                                    <h4 className="font-bold text-blue-800 mb-6 text-xl flex items-center gap-3">
-                                        <span>👥</span> 1. Aset Manusia
-                                    </h4>
-                                    <p className="text-gray-700 leading-relaxed mb-6">
-                                        Dusun sidomulyo dihuni oleh lansia yang minim akan produktivitas pekerjaan berat tetapi masih tetap aktif dalam kegiatan bermasyarakat yang condong kearah kreativitas. Selain itu, masih banyak warga yang aktif beternak untuk mengisi keseharian. Dengan demikian, pembuatan alat, disinfektan, serta optimalisasi pakan dapat dilakukan oleh para lansia guna mengisi waktu luang mereka sekaligus menjaga ternak lebih sehat.
-                                    </p>
-                                    <p className="text-gray-700 leading-relaxed mb-6">
-                                        Terdapat banyak pemuda aktif yang seringkali ikut serta menjadi panitia dalam setiap acara di dusun sidomulyo. Banyak warga yang tertarik pada kegiatan yang menunjang kreativitas seperti pembuatan tanaman hidroponik, ataupun pengelolaan limbah plastik sebagai wadah tanaman.
-                                    </p>
+                                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                                    <div className="bg-white p-8 rounded-3xl shadow-xl border border-blue-100">
+                                        <h4 className="font-bold text-blue-800 mb-6 text-xl flex items-center gap-3">
+                                            <span>👥</span> 1. Aset Manusia
+                                        </h4>
+                                        <p className="text-gray-700 leading-relaxed mb-6">
+                                            Dusun sidomulyo dihuni oleh lansia yang minim akan produktivitas pekerjaan berat tetapi masih tetap aktif dalam kegiatan bermasyarakat yang condong kearah kreativitas. Selain itu, masih banyak warga yang aktif beternak untuk mengisi keseharian. Dengan demikian, pembuatan alat, disinfektan, serta optimalisasi pakan dapat dilakukan oleh para lansia guna mengisi waktu luang mereka sekaligus menjaga ternak lebih sehat.
+                                        </p>
+                                        <p className="text-gray-700 leading-relaxed mb-6">
+                                            Terdapat banyak pemuda aktif yang seringkali ikut serta menjadi panitia dalam setiap acara di dusun sidomulyo. Banyak warga yang tertarik pada kegiatan yang menunjang kreativitas seperti pembuatan tanaman hidroponik, ataupun pengelolaan limbah plastik sebagai wadah tanaman.
+                                        </p>
+                                    </div>
+                                    <div className="relative">
+                                        <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                                            <img
+                                                src="/images/images/WhatsApp Image 2025-08-13 at 19.20.34_01260fa6.jpg"
+                                                alt="Aktivitas masyarakat dalam kegiatan kreatif"
+                                                className="w-full h-80 object-cover"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                                            <div className="absolute bottom-6 left-6 right-6">
+                                                <p className="text-white font-semibold text-lg">
+                                                    Keterlibatan Aktif Masyarakat dalam Program
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 {/* Aset Sosial */}
-                                <div className="bg-white p-8 rounded-3xl shadow-xl border border-cyan-100">
-                                    <h4 className="font-bold text-cyan-800 mb-6 text-xl flex items-center gap-3">
-                                        <span>🤝</span> 2. Aset Sosial
-                                    </h4>
-                                    <p className="text-gray-700 leading-relaxed mb-6">
-                                        Jaringan kekerabatan sangat erat di dusun sidomulyo. Tidak hanya antar warga, tetapi juga antara warga dan pejabat desa juga cukup dekat dan harmonis. Selain itu, terdapat kelompok ibu-ibu PKK yang aktif dalam mengikuti kegiatan seperti posyandu, posbindu, dan juga arisan. Segala bentuk gotong royong dan kerjasama antar warga maupun pejabat desa, sangat mendorong keberhasilan program pencegahan penyakit dan peningkatan kesehatan pada hewan ternak.
-                                    </p>
+                                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                                    <div className="relative order-2 lg:order-1">
+                                        <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                                            <img
+                                                src="/images/images/WhatsApp Image 2025-07-23 at 13.11.28_8d47d2f8.jpg"
+                                                alt="Kegiatan sosial masyarakat seperti PKK dan pengajian"
+                                                className="w-full h-80 object-cover"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                                            <div className="absolute bottom-6 left-6 right-6">
+                                                <p className="text-white font-semibold text-lg">
+                                                    Kegiatan PKK dan Organisasi Masyarakat
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-8 rounded-3xl shadow-xl border border-cyan-100 order-1 lg:order-2">
+                                        <h4 className="font-bold text-cyan-800 mb-6 text-xl flex items-center gap-3">
+                                            <span>🤝</span> 2. Aset Sosial
+                                        </h4>
+                                        <p className="text-gray-700 leading-relaxed mb-6">
+                                            Jaringan kekerabatan sangat erat di dusun sidomulyo. Tidak hanya antar warga, tetapi juga antara warga dan pejabat desa juga cukup dekat dan harmonis. Selain itu, terdapat kelompok ibu-ibu PKK yang aktif dalam mengikuti kegiatan seperti posyandu, posbindu, dan juga arisan. Segala bentuk gotong royong dan kerjasama antar warga maupun pejabat desa, sangat mendorong keberhasilan program pencegahan penyakit dan peningkatan kesehatan pada hewan ternak.
+                                        </p>
+                                    </div>
                                 </div>
 
                                 {/* Aset Fisik */}
-                                <div className="bg-white p-8 rounded-3xl shadow-xl border border-green-100">
-                                    <h4 className="font-bold text-green-800 mb-6 text-xl flex items-center gap-3">
-                                        <span>🏞️</span> 3. Aset Fisik
-                                    </h4>
-                                    <p className="text-gray-700 leading-relaxed mb-6">
-                                        Aset fisik yang dimaksud dapat dilihat dari banyaknya lahan atau sumber daya alam yang dapat digunakan. Seperti banyaknya tanaman atau bahan baku yang dapat terkelola dengan baik, sehingga dapat dimanfaatkan menjadi bahan utama dari pakan maupun disinfektan kandang. Selain itu, masih banyak lahan kosong yang belum difungsikan secara maksimal sehingga dapat dialihfungsikan menjadi tempat pengelolaan biosekuriti peternak menjadi produk inovasi warga bersama.
-                                    </p>
+                                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                                    <div className="bg-white p-8 rounded-3xl shadow-xl border border-green-100">
+                                        <h4 className="font-bold text-green-800 mb-6 text-xl flex items-center gap-3">
+                                            <span>🏞️</span> 3. Aset Fisik
+                                        </h4>
+                                        <p className="text-gray-700 leading-relaxed mb-6">
+                                            Aset fisik yang dimaksud dapat dilihat dari banyaknya lahan atau sumber daya alam yang dapat digunakan. Seperti banyaknya tanaman atau bahan baku yang dapat terkelola dengan baik, sehingga dapat dimanfaatkan menjadi bahan utama dari pakan maupun disinfektan kandang. Selain itu, masih banyak lahan kosong yang belum difungsikan secara maksimal sehingga dapat dialihfungsikan menjadi tempat pengelolaan biosekuriti peternak menjadi produk inovasi warga bersama.
+                                        </p>
+                                    </div>
+                                    <div className="relative">
+                                        <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                                            <img
+                                                src="/images/images/sumberharjo.jpg"
+                                                alt="Lahan dan sumber daya alam desa"
+                                                className="w-full h-80 object-cover"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                                            <div className="absolute bottom-6 left-6 right-6">
+                                                <p className="text-white font-semibold text-lg">
+                                                    Potensi Lahan dan Sumber Daya Alam
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 {/* Aset Teknologi */}
@@ -367,16 +492,33 @@ export default function EtnografiDusunSidomulya() {
                             </div>
 
                             <div className="space-y-8">
-                                <div className="bg-white p-8 rounded-3xl shadow-xl border border-indigo-100">
-                                    <h4 className="font-bold text-indigo-800 mb-6 text-xl flex items-center gap-3">
-                                        <span>1️⃣</span> Aktif Menjalin Sosialisasi dengan Masyarakat Setempat
-                                    </h4>
-                                    <p className="text-gray-700 leading-relaxed mb-4">
-                                        Dalam pemahaman antropologi, setiap masyarakat memiliki standar sosial budaya yang berbeda. Maka dari itu, kita perlu ikut serta membaur ke dalam masyarakat untuk dapat diterima dan memberikan ide ataupun inovasi yang dapat mereka lakukan. Berdasarkan aset sosial yang telah diidentifikasi, kita dapat melihat bahwa nilai kekeluargaan dan kebersamaan sangat erat terjalin.
-                                    </p>
-                                    <p className="text-gray-700 leading-relaxed">
-                                        Dengan demikian, mahasiswa harus mengikuti nilai moral yang tertanam dalam budaya setempat agar bisa diterima oleh masyarakat. Dalam hal ini, para mahasiswa bisa ikut aktif dalam kegiatan bersama seperti PKK, pengajian, kerja bakti atau sekedar bercengkrama di sore hari.
-                                    </p>
+                                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                                    <div className="bg-white p-8 rounded-3xl shadow-xl border border-indigo-100">
+                                        <h4 className="font-bold text-indigo-800 mb-6 text-xl flex items-center gap-3">
+                                            <span>1️⃣</span> Aktif Menjalin Sosialisasi dengan Masyarakat Setempat
+                                        </h4>
+                                        <p className="text-gray-700 leading-relaxed mb-4">
+                                            Dalam pemahaman antropologi, setiap masyarakat memiliki standar sosial budaya yang berbeda. Maka dari itu, kita perlu ikut serta membaur ke dalam masyarakat untuk dapat diterima dan memberikan ide ataupun inovasi yang dapat mereka lakukan. Berdasarkan aset sosial yang telah diidentifikasi, kita dapat melihat bahwa nilai kekeluargaan dan kebersamaan sangat erat terjalin.
+                                        </p>
+                                        <p className="text-gray-700 leading-relaxed">
+                                            Dengan demikian, mahasiswa harus mengikuti nilai moral yang tertanam dalam budaya setempat agar bisa diterima oleh masyarakat. Dalam hal ini, para mahasiswa bisa ikut aktif dalam kegiatan bersama seperti PKK, pengajian, kerja bakti atau sekedar bercengkrama di sore hari.
+                                        </p>
+                                    </div>
+                                    <div className="relative">
+                                        <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                                            <img
+                                                src="/images/images/WhatsApp Image 2025-08-14 at 11.59.04_cf1245b2.jpg"
+                                                alt="Mahasiswa KKN berinteraksi dengan masyarakat"
+                                                className="w-full h-80 object-cover"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                                            <div className="absolute bottom-6 left-6 right-6">
+                                                <p className="text-white font-semibold text-lg">
+                                                    Integrasi Mahasiswa dengan Masyarakat
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div className="bg-white p-8 rounded-3xl shadow-xl border border-purple-100">
