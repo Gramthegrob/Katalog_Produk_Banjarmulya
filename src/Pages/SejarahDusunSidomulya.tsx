@@ -97,7 +97,7 @@ export default function SejarahDusunSidomulya() {
                         <h1 className={`text-5xl md:text-7xl font-bold text-white mb-8 transition-all duration-1000 leading-tight ${
                             isVisible ? 'animate-slide-in-up stagger-1' : 'opacity-0 translate-y-10'
                         }`}>
-                            Sejarah Dusun <span className="text-green-400">Sidomulya</span>
+                            Sejarah Dusun <span className="text-green-400">Sidomulyo</span>
                         </h1>
 
                         <p className={`text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl transition-all duration-1000 ${
@@ -165,7 +165,7 @@ export default function SejarahDusunSidomulya() {
 
                                     <div className="prose prose-lg max-w-none">
                                         <p className="text-gray-700 leading-relaxed text-xl mb-8 first-letter:text-5xl first-letter:font-bold first-letter:text-green-600 first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-                                            Dusun Sidomulya, sebuah permukiman kecil yang terletak di bawah bayangan cerobong tua Pabrik Gula Sumberharjo,
+                                            Dusun Sidomulyo, sebuah permukiman kecil yang terletak di bawah bayangan cerobong tua Pabrik Gula Sumberharjo,
                                             menyimpan kisah panjang perjalanan sejarah yang menarik. Dari masa kolonial Belanda hingga era kemerdekaan Indonesia,
                                             dusun ini telah menjadi saksi berbagai peristiwa penting yang membentuk identitas dan karakter masyarakatnya.
                                         </p>
@@ -173,10 +173,10 @@ export default function SejarahDusunSidomulya() {
                                         <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-xl mb-8">
                                             <Quote className="w-8 h-8 text-green-500 mb-4" />
                                             <blockquote className="text-lg italic text-gray-700">
-                                                "Sejarah adalah guru terbaik, dan Dusun Sidomulya adalah bukti hidup bagaimana sebuah komunitas
+                                                "Sejarah adalah guru terbaik, dan Dusun Sidomulyo adalah bukti hidup bagaimana sebuah komunitas
                                                 dapat bertahan dan berkembang melalui berbagai perubahan zaman."
                                             </blockquote>
-                                            <cite className="text-green-600 font-semibold mt-2 block">- Pak Kalis, Kadus Sidomulya</cite>
+                                            <cite className="text-green-600 font-semibold mt-2 block">- Pak Kalis, Kadus Sidomulyo</cite>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +202,7 @@ export default function SejarahDusunSidomulya() {
 
                                     <div className="prose prose-lg max-w-none">
                                         <p className="text-gray-700 leading-relaxed text-lg mb-6">
-                                            Sejarah Dusun Sidomulya tidak dapat dipisahkan dari berdirinya Pabrik Gula Sumberharjo pada awal abad ke-19.
+                                            Sejarah Dusun Sidomulyo tidak dapat dipisahkan dari berdirinya Pabrik Gula Sumberharjo pada awal abad ke-19.
                                             Pabrik ini didirikan oleh pemerintah kolonial Belanda sebagai bagian dari sistem kultuurstelse (sistem tanam paksa)
                                             yang diberlakukan di Jawa.
                                         </p>
@@ -323,7 +323,7 @@ export default function SejarahDusunSidomulya() {
                                     <div className="prose prose-lg max-w-none">
                                         <p className="text-gray-700 leading-relaxed text-lg mb-6">
                                             Pasca kemerdekaan Indonesia, Pabrik Gula Sumberharjo mengalami nasionalisasi dan menjadi bagian dari
-                                            Perusahaan Negara Perkebunan (PNP). Era ini menandai babak baru dalam sejarah Dusun Sidomulya dengan
+                                            Perusahaan Negara Perkebunan (PNP). Era ini menandai babak baru dalam sejarah Dusun Sidomulyo dengan
                                             berbagai perubahan signifikan.
                                         </p>
 
@@ -332,7 +332,7 @@ export default function SejarahDusunSidomulya() {
                                                 <span>🌟</span> Masa Keemasan (1950-1970)
                                             </h4>
                                             <p className="text-gray-700 leading-relaxed">
-                                                Periode ini merupakan masa keemasan pabrik gula dimana produksi mencapai puncaknya. Dusun Sidomulya
+                                                Periode ini merupakan masa keemasan pabrik gula dimana produksi mencapai puncaknya. Dusun Sidomulyo
                                                 berkembang pesat dengan fasilitas yang semakin lengkap. Masyarakat menikmati kehidupan yang relatif
                                                 sejahtera dengan jaminan kerja yang stabil dan berbagai fasilitas sosial.
                                             </p>
@@ -340,7 +340,7 @@ export default function SejarahDusunSidomulya() {
 
                                         <p className="text-gray-700 leading-relaxed text-lg">
                                             Namun, mulai tahun 1970-an, industri gula nasional menghadapi berbagai tantangan termasuk persaingan
-                                            global dan penurunan produktivitas. Hal ini mulai berdampak pada kehidupan masyarakat Dusun Sidomulya.
+                                            global dan penurunan produktivitas. Hal ini mulai berdampak pada kehidupan masyarakat Dusun Sidomulyo.
                                         </p>
                                     </div>
                                 </div>
@@ -416,7 +416,7 @@ export default function SejarahDusunSidomulya() {
 
                             <div className="bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
                                 <p className="text-gray-700 leading-relaxed text-lg">
-                                    Meskipun menghadapi berbagai tantangan, masyarakat Dusun Sidomulya menunjukkan ketahanan dan adaptabilitas
+                                    Meskipun menghadapi berbagai tantangan, masyarakat Dusun Sidomulyo menunjukkan ketahanan dan adaptabilitas
                                     yang luar biasa. Mereka berhasil membangun ekonomi alternatif berbasis pertanian dan usaha kecil sambil
                                     tetap mempertahankan nilai-nilai komunal yang telah mengakar sejak masa lalu.
                                 </p>
@@ -461,9 +461,9 @@ export default function SejarahDusunSidomulya() {
                             <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-3xl p-12 shadow-2xl">
                                 <h3 className="text-3xl font-bold mb-6 text-center">Kesimpulan</h3>
                                 <p className="leading-relaxed text-lg text-center max-w-4xl mx-auto">
-                                    Sejarah Dusun Sidomulya adalah cerminan dari perjalanan bangsa Indonesia secara keseluruhan.
+                                    Sejarah Dusun Sidomulyo adalah cerminan dari perjalanan bangsa Indonesia secara keseluruhan.
                                     Dari masa kolonial yang penuh tantangan, era kemerdekaan yang penuh harapan, hingga periode
-                                    transisi yang membutuhkan adaptasi, masyarakat Sidomulya telah membuktikan bahwa dengan
+                                    transisi yang membutuhkan adaptasi, masyarakat Sidomulyo telah membuktikan bahwa dengan
                                     semangat gotong royong dan kearifan lokal, sebuah komunitas dapat bertahan dan berkembang
                                     meskipun menghadapi berbagai perubahan zaman.
                                 </p>

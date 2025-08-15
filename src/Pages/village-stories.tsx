@@ -16,8 +16,8 @@ interface Story {
 const stories: Story[] = [
     {
         id: 1,
-        title: "Sejarah Dusun Sidomulya",
-        excerpt: "Perjalanan panjang Dusun Sidomulya dari masa kolonial hingga era modern, termasuk peran penting pabrik gula Sumberharjo dalam membentuk identitas dan karakter masyarakat setempat.",
+        title: "Sejarah Dusun Sidomulyo",
+        excerpt: "Perjalanan panjang Dusun Sidomulyo dari masa kolonial hingga era modern, termasuk peran penting pabrik gula Sumberharjo dalam membentuk identitas dan karakter masyarakat setempat.",
         date: "30 Juli 2025",
         author: "Bagaskara Dipowicaksono HP",
         image: "/images/images/sumberharjo.jpg",
@@ -26,7 +26,7 @@ const stories: Story[] = [
     },
     {
         id: 2,
-        title: "Etnografi Dusun Sidomulya",
+        title: "Etnografi Dusun Sidomulyo",
         excerpt: "Kajian mendalam tentang budaya, adat istiadat, dan kehidupan sosial masyarakat Sidomulya. Eksplorasi tradisi yang masih lestari dan adaptasi terhadap perubahan zaman.",
         date: "8 Agustus 2025",
         author: "Marella Tri Anjani",
@@ -144,7 +144,7 @@ export default function VillageStories() {
                     <p className={`text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 px-4 ${
                         isVisible ? 'animate-fade-in stagger-2' : 'opacity-0'
                     }`}>
-                        Jelajahi sejarah dan budaya yang kaya dari Dusun Sidomulya melalui kajian sejarah dan etnografi yang mendalam.
+                        Jelajahi sejarah dan budaya yang kaya dari Dusun Sidomulyo melalui kajian sejarah dan etnografi yang mendalam.
                     </p>
                 </div>
 

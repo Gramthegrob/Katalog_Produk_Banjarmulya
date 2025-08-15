@@ -86,7 +86,7 @@ export default function Hero() {
                   <span className={`block text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-green-300 drop-shadow-lg transition-all duration-1000 ${
                       isVisible ? 'animate-slide-in-up stagger-1' : 'opacity-0 translate-y-10'
                   }`}>
-                    Sidomulya
+                    Sidomulyo
                   </span>
                     <span className={`block text-lg sm:text-2xl md:text-4xl lg:text-5xl font-bold text-green-200 drop-shadow-lg transition-all duration-1000 ${
                         isVisible ? 'animate-slide-in-up stagger-2' : 'opacity-0 translate-y-10'

@@ -27,7 +27,7 @@ export default function Overview() {
         {
             icon: Book,
             title: "Overview",
-            description: "Pelajari lebih lanjut tentang Dusun Sidomulya, komunitas kami dan cerita yang membuat kami unik. Pelajari kekayaan warisan dan budaya kami.",
+            description: "Pelajari lebih lanjut tentang Dusun Sidomulyo, komunitas kami dan cerita yang membuat kami unik. Pelajari kekayaan warisan dan budaya kami.",
             href: "/village-stories",
             gradient: "from-blue-500 to-purple-600",
             type: "external"
@@ -35,7 +35,7 @@ export default function Overview() {
         {
             icon: Package,
             title: "Produk",
-            description: "Jelajahi berbagai produk lokal dan hasil pertanian yang dihasilkan oleh masyarakat Sidomulya. Temukan kualitas terbaik dari tanah kami.",
+            description: "Jelajahi berbagai produk lokal dan hasil pertanian yang dihasilkan oleh masyarakat Sidomulyo. Temukan kualitas terbaik dari tanah kami.",
             scrollTo: "products",
             gradient: "from-green-500 to-teal-600",
             type: "scroll"
@@ -64,7 +64,7 @@ export default function Overview() {
                 <h2 className={`text-5xl md:text-6xl font-bold text-center text-white mb-20 drop-shadow-lg transition-all duration-1000 ${
                     isVisible ? 'animate-slide-in-up' : 'opacity-0 translate-y-10'
                 }`}>
-                    Tentang Sidomulya
+                    Tentang Sidomulyo
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
