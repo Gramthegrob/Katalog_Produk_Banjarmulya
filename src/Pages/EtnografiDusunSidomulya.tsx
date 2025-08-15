@@ -325,7 +325,7 @@ export default function EtnografiDusunSidomulya() {
                                 </div>
                                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                                     <img
-                                        src="/images/images/sumberharjo.jpg"
+                                        src="/images/images/WhatsApp Image 2025-08-15 at 08.31.15_e78a7817.jpg"
                                         alt="Smart light trap dan disinfektan kandang"
                                         className="w-full h-64 object-cover"
                                     />
